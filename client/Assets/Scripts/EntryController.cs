@@ -15,4 +15,9 @@ public class EntryController : MonoBehaviour
     {
         animator.SetInteger("mode", 1);
     }
+
+    public void MoveToName()
+    {
+        animator.SetInteger("mode", 0);
+    }
 }
