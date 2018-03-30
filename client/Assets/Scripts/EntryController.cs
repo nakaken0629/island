@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EntryController : MonoBehaviour
 {
@@ -19,5 +20,10 @@ public class EntryController : MonoBehaviour
     public void MoveToName()
     {
         animator.SetInteger("mode", 0);
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
