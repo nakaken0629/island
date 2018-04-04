@@ -110,7 +110,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 454013b606f29440baac04c2e810c790, type: 2}
@@ -305,7 +305,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7c38dda472033410dacfbc9915abf863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -436,7 +436,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7c38dda472033410dacfbc9915abf863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -507,7 +507,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: dab15b461dede4293b9a959e1ca4044c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d2cf83ddd0c479e8da8914e322ce27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_animator: {fileID: 1790716743}
 --- !u!4 &1790716741 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4749730850939948, guid: 1e8e1924bb442334c9125455634bb567,
@@ -603,3 +604,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1790716743 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95879256730774250, guid: 1e8e1924bb442334c9125455634bb567,
+    type: 2}
+  m_PrefabInternal: {fileID: 710661477}
