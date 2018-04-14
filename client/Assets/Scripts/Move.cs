@@ -27,10 +27,10 @@ public class Move : MonoBehaviour
                 agent.SetDestination(hit.point);
             }
         }
-        if (agent.remainingDistance > 0.02f) {
+        if (agent.remainingDistance > 0.04f) {
             m_animator.SetFloat("MoveSpeed", 1);
         }
-        else if (agent.remainingDistance < 0.001f)
+        else if (agent.remainingDistance < 0.02f)
         {
             m_animator.SetFloat("MoveSpeed", 0);
         }
