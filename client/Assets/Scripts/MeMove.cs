@@ -16,18 +16,4 @@ public class MeMove : Move {
         }
         UpdateMove();
     }
-
-    protected override void UpdateMove()
-    {
-        if (agent.remainingDistance > 0.04f)
-        {
-            Debug.Log("move " + agent.remainingDistance);
-            animator.SetFloat("MoveSpeed", 1);
-        }
-        else if (agent.remainingDistance < 0.02f)
-        {
-            Debug.Log("stop " + agent.remainingDistance);
-            animator.SetFloat("MoveSpeed", 0);
-        }
-    }
 }

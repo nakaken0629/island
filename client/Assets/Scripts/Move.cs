@@ -14,7 +14,7 @@ public abstract class Move : MonoBehaviour
         animator.SetBool("Grounded", true);
     }
 
-    protected virtual void UpdateMove()
+    protected void UpdateMove()
     {
         if (agent.remainingDistance > 0.04f) {
             animator.SetFloat("MoveSpeed", 1);
